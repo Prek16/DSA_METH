@@ -1,0 +1,14 @@
+
+
+// User function Template for Java
+
+class Solution {
+    public int absolute(int I) {
+            if (I >=0)
+            {
+                return I;
+            }
+            else return I*-1;
+    
+}
+}  
