@@ -1,0 +1,26 @@
+
+
+// User function Template for Java
+
+class Solution {
+    public ArrayList<Integer> quadraticRoots(int a, int b, int c) {
+     ArrayList<Integer> roots = new ArrayList<>();
+
+        int discriminant = b * b - 4 * a * c;
+        if (discriminant > 0) {
+            int root1 = (int) Math.floor((-b + Math.sqrt(discriminant)) / (2 * a));
+            int root2 = (int) Math.floor((-b - Math.sqrt(discriminant)) / (2 * a));
+            roots.add(Math.max(root1, root2));
+            roots.add(Math.min(root1, root2));
+        } else if (discriminant == 0) {
+            int root = (int) Math.floor(-b / (2 * a));
+            roots.add(root);
+            roots.add(root);
+        } else {
+            roots.add(-1); // Imaginary roots
+        }
+
+        return roots;
+}
+
+}
