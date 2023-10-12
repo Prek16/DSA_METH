@@ -1,0 +1,22 @@
+
+
+//User function Template for Java
+
+
+class Solution{
+    public int digitsInFactorial(int N){
+       long count=0;
+        
+        if(N<0){
+         return 0;
+        }
+        if(N==0 && N==1) return 1;
+            double res=0;
+         
+        for(long i=2; i<=N; i++){
+            res += Math.log10(i);
+        }
+        
+        return (int)(Math.floor(res)) + 1;
+    }
+}
