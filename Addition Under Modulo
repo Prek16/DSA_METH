@@ -1,0 +1,11 @@
+
+
+//User function Template for Java
+
+class Solution {
+    public static long sumUnderModulo(long a, long b){
+       long M=1000000007L;
+        long ans=(a%M +b%M)%M;
+        return ans;
+    }   
+}
