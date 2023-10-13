@@ -1,0 +1,30 @@
+
+
+//User function Template for Java
+
+class Solution
+{
+    static long multiplicationUnderModulo(long a, long b)
+    {
+      long mod=1000000007L;
+        long res = 0; 
+        a %= mod;
+ 
+        while (b > 0)
+        {
+             
+            // If b is odd, add a with result
+            if ((b & 1) > 0)
+            {
+                res = (res + a) % mod;
+            }
+ 
+            // Here we assume that doing 2*a
+            // doesn't cause overflow
+            a = (2 * a) % mod;
+ 
+            b >>= 1; // b = b / 2
+        }
+        return res;
+    }
+}
