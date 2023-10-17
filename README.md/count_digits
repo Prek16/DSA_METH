@@ -1,0 +1,9 @@
+# DSA_METH
+Simple Iterative Solution to count digits in an integer
+The integer entered by the user is stored in the variable n. Then the while loop is iterated until the test expression n != 0 is evaluated to 0 (false).   We will consider 3456 as the input integer.  
+
+After the first iteration, the value of n will be updated to 345 and the count is incremented to 1.
+After the second iteration, the value of n will be updated to 34 and the count is incremented to 2.
+After the third iteration, the value of n will be updated to 3 and the count is incremented to 3.
+In the fourth iteration, the value of n will be updated to zero and the count will be incremented to 4.  
+Then the test expression is evaluated ( n!=0 ) as false and the loop terminates with final count as 4.
